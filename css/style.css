@@ -1,0 +1,310 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Global Rules */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header Section CSS */
+
+header{
+    background-color: #eeeeee;
+    padding: 20px 0;
+    width: 100%;
+    float: left;
+}
+
+/* Banner Section CSS */
+.banner{
+    width: 100%;
+    float: left;
+    background: url(../img/banner.png) no-repeat center;
+    background-size: cover;
+    padding: 250px 0 150px;
+}
+.banner h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 80px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.underline-border{
+    height: 3px;
+    width: 60%;
+    margin: 20px auto 30px;
+    background: #15f4fa;
+
+}
+
+.banner p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn-custom{
+    padding: 12px 30px;
+    border: 1px solid #15f4fa;
+    background: transparent;
+    display: block;
+    margin: 100px auto 150px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.btn-custom:hover{
+    background: #15f4fa;
+    cursor: pointer;
+
+}
+
+.banner .fas{
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+
+/* About section CSS */
+.about{
+    background: #f9f9f9;
+    width: 100%;
+    float: left;
+    
+}
+
+.about h2{
+    display: block;
+    margin: 45px 0 35px;
+    text-align: center;
+    color: #2d3950;
+    font-size: 45px;
+}
+
+.about p{
+    text-align: center;
+    margin: 0 0 100px;
+    color: #999999;
+    line-height: 30px;
+}
+
+/* Feature section css */
+.feature{
+    width: 100%;
+    float: left;
+    padding: 40px 0;
+}
+
+.feature img{
+    display: block;
+    margin: 0 auto;
+}
+
+.feature h3{
+    margin: 10px 0 ;
+    text-align: center;
+    font-size: 30px;
+    color: #2d3950;
+}
+
+.feature p{
+    text-align: center;
+    color: #999999;
+}
+
+/* Gallery section cSS */
+
+.gallery img{
+    width: 100%;
+}
+
+.gallery{
+    float: left;
+    width: 100%;
+    background: #f9f9f9;
+    padding: 100px 0;
+}
+
+.gallery h3{
+    text-align: center;
+    color: #2d3950;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.gallery p{
+    text-align: center;
+    color: #999999;
+    font-size: 15px;
+}
+
+.gallery-item{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+.gallery-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(44, 171, 246, 0);
+    transform: translateX(-100%);
+    transition: 0.4s ease-in-out;
+}
+
+.gallery-item:hover .gallery-hover{
+    background: rgba(44, 171, 246, .8);
+    transform: translateX(0%);
+
+}
+
+.gallery-hover ul li{
+    text-align: center;
+}
+
+.fa-link{
+    width: 45px;
+    height: 45px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 30%;
+    text-align: center;
+    line-height: 45px;
+}
+
+/* Contact us CSS */
+.contact-us{
+    float: left;
+    width: 100%;
+    background: url(../img/contact-us-bg.png);
+    padding: 100px 0 120px;
+    background-size: cover;
+}
+
+.contact-us h3{
+    text-align: center;
+    font-size: 55px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.contact-us p{
+    text-align: center;
+    color: #999999;
+    font: 20px;
+    margin-bottom: 50px;
+}
+
+.contact-form{
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.form-group-custom{
+    margin-bottom: 15px;
+}
+
+.form-group-custom label{
+    color: #fff;
+}
+.form-control-custom{
+    width: 100%;
+    height: 40px;
+    color: #999999;
+    border: 1px solid #999999;
+    margin: 0 auto;
+    background: transparent;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+
+.form-control-txtarea{
+    width: 100%;
+    height: 120px;
+    color: #999999;
+    border: 1px solid #999999;
+    margin: 0 auto;
+    background: transparent;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.input-btn{
+    padding: 12px 30px;
+    float: right;
+    border-radius: 3px;
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #15a4fa;
+}
+
+.input-btn:hover{
+    background: #15a4fa;
+    cursor: pointer;
+}
+
+footer{
+    background: #f9f9f9;
+    padding: 20px 0;
+    width: 100%;
+    float: left;
+}
+
+footer p{
+    color: #999999;
+}
+
+.footer-icon{
+    float: right;
+}
+
+.footer-icon ul{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-icon ul li{
+    list-style: none;
+    display: inline;
+}
+
+.fab{
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    background: #15a4fa;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    transition: 0.4s ease-in-out;
+}
+
+.footer-icon ul li .fab:hover{
+    transform: rotate(45deg);
+}
